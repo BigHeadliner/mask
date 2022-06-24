@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none;
+  color: #575C74;
 }
 
 /*-- variables --*/
@@ -20,7 +21,7 @@ body {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 10px;
-  border: 1px solid transparent;
+  border: 1px solid green;
 }
 
 /*-- header --*/
@@ -35,4 +36,10 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 24px 0;
+}
+.header .header__top .menu .menu__list {
+  display: flex;
+}
+.header .header__top .menu .menu__list .menu__item + .menu__item {
+  margin-left: 45px;
 }/*# sourceMappingURL=style.css.map */

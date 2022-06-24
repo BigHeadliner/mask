@@ -3,7 +3,8 @@
 }  
  
 a{ 
-  text-decoration:none;
+  text-decoration:none; 
+  color:#575C74;
 }
   
 // font-family: 'Open Sans', sans-serif;
@@ -28,7 +29,7 @@ body {
   max-width: 1150px; 
   margin:0 auto;  
   padding: 0 10px;  
-  border:1px solid transparent; 
+  border:1px solid green; 
 }  
   
 
@@ -38,13 +39,24 @@ body {
 .header {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
-  background-position:right;
+  background-position: right;
   background-repeat: no-repeat;
 
   .header__top {
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     padding: 24px 0;
+
+    .menu {
+      .menu__list {
+        display: flex;
+
+        .menu__item+.menu__item {
+          margin-left: 45px;
+        }
+
+      }
+    }
   }
 }
