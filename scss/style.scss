@@ -1,0 +1,50 @@
+*{ 
+  box-sizing: border-box;
+}  
+ 
+a{ 
+  text-decoration:none;
+}
+  
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Rubik', sans-serif;  
+ 
+/*-- variables --*/ 
+$dark: #0C122D;  
+$grey: #575C74; 
+$blue: #1B5FC1; 
+$accent: #FFB800;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $grey; 
+} 
+ 
+.container{ 
+  max-width: 1150px; 
+  margin:0 auto;  
+  padding: 0 10px;  
+  border:1px solid transparent; 
+}  
+  
+
+ 
+/*-- header --*/ 
+ 
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position:right;
+  background-repeat: no-repeat;
+
+  .header__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 24px 0;
+  }
+}

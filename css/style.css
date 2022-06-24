@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-- variables --*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #575C74;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border: 1px solid transparent;
+}
+
+/*-- header --*/
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.header .header__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+}/*# sourceMappingURL=style.css.map */
