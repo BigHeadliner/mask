@@ -32,15 +32,16 @@ body {
 /*-- header --*/
 .header {
   background-image: url(../images/header-bg.jpg);
-  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  background-color: #E5E5E5;
 }
 .header .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+  margin-bottom: 56px;
 }
 .header .header__top .menu {
   margin-left: auto;
@@ -57,7 +58,7 @@ body {
 .header .header__top .menu .menu__list .menu__item + .menu__item .menu__link:hover {
   color: #0C122D;
 }
-.header .header__top .menu__link-btn {
+.header .header__top .header__top-btn {
   padding: 9px 25px;
   border-radius: 8px;
   margin-left: 45px;
@@ -67,4 +68,59 @@ body {
   font-size: 14px;
   line-height: 30px;
   color: #FFF;
+}
+.header .header__main {
+  display: flex;
+}
+.header .header__main .header__main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .header__main .header__main-info .header__main-pretitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: #FFB800;
+}
+.header .header__main .header__main-info .header__main-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+  margin-bottom: 40px;
+  color: #0C122D;
+}
+.header .header__main .header__main-info .header__main-text {
+  line-height: 24px;
+  max-width: 555px;
+  margin-bottom: 54px;
+}
+.header .header__main .header__main-info .header__main-buttons {
+  max-width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__main .header__main-info .header__main-buttons .header__main-button {
+  padding: 8px 24px;
+  background-color: #FFF;
+  border: 1px solid #FFB800;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFB800;
+  transition: all 0.5s;
+}
+.header .header__main .header__main-info .header__main-buttons .header__main-button:hover {
+  border: 1px solid transparent;
+  background-color: #1B5FC1;
+  color: #FFF;
+  box-shadow: 0px 10px 15px 0px rgba(27, 95, 193, 0.1882352941);
+}
+.header .header__main .header__main-img {
+  border-radius: 15px 15px 15px 0;
 }/*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@ $grey: #575C74;
 $blue: #1B5FC1; 
 $accent: #FFB800;
 
-body {
+body{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -43,47 +43,109 @@ body {
  
 .header {
   background-image: url(../images/header-bg.jpg);
-  background-size: cover;
+  // background-size: cover;
   background-position: right;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat; 
+  background-color: #E5E5E5;
 
   .header__top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 0;
-  
-      .menu {
-        margin-left: auto;
-  
-        .menu__list {
-          display: flex;
-  
-          .menu__item+.menu__item {
-            margin-left: 45px;
-  
-            .menu__link {
-              transition: all .3s;
-            }
-  
-            .menu__link:hover {
-              color: $dark;
-            }
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0; 
+    margin-bottom: 56px;
+
+    .menu {
+      margin-left: auto;
+
+      .menu__list {
+        display: flex;
+
+        .menu__item+.menu__item {
+          margin-left: 45px;
+
+          .menu__link {
+            transition: all .3s;
           }
+
+          .menu__link:hover {
+            color: $dark;
+          }
+
         }
       }
-  
-      .menu__link-btn {
-        padding: 9px 25px;
-        border-radius: 8px;
-        margin-left: 45px;
-        background-color: $blue;
-        font-family: 'Rubik', sans-serif;
+    }
+
+    .header__top-btn {
+      padding: 9px 25px;
+      border-radius: 8px;
+      margin-left: 45px;
+      background-color: $blue;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      color: #FFF;
+    }
+  }
+
+  .header__main {
+    display: flex;
+
+    .header__main-info { 
+       display: flex; 
+       flex-direction: column; 
+      justify-content: center;
+      .header__main-pretitle { 
+        font-family: 'Rubik', sans-serif; 
         font-weight: 500;
         font-size: 14px;
-        line-height: 30px;
-        color: #FFF;
+        line-height: 30px; 
+        margin-bottom: 30px;
+        color: $accent;
+      } 
+       
+      .header__main-title{ 
+        font-family: 'Rubik', sans-serif;  
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 82px; 
+        margin-bottom: 40px;
+        color: $dark;
+      } 
+       
+      .header__main-text{ 
+        line-height: 24px;  
+        max-width: 555px; 
+        margin-bottom: 54px;
+      } 
+      .header__main-buttons{  
+        max-width: 260px;
+        display: flex;  
+        justify-content: space-between;
+        .header__main-button{ 
+          padding: 8px 24px;  
+          background-color: #FFF; 
+          border:1px solid $accent; 
+          border-radius: 8px;
+          font-family: 'Rubik', sans-serif;  
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 30px;        
+          color: $accent; 
+          transition: all .5s;
+        } 
+        .header__main-button:hover{ 
+          border:1px solid transparent;  
+          background-color: $blue; 
+          color:#FFF; 
+          box-shadow: 0px 10px 15px 0px #1B5FC130;
+        }
       }
     }
+
+    .header__main-img {
+      border-radius: 15px 15px 15px 0;
+    }
+  }
 }
