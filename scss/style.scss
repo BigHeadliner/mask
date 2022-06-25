@@ -4,7 +4,12 @@
  
 a{ 
   text-decoration:none; 
-  color:#575C74;
+  color:#575C74; 
+  display: block;
+} 
+ 
+img{ 
+  display: block; 
 }
   
 // font-family: 'Open Sans', sans-serif;
@@ -43,20 +48,42 @@ body {
   background-repeat: no-repeat;
 
   .header__top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-
-    .menu {
-      .menu__list {
-        display: flex;
-
-        .menu__item+.menu__item {
-          margin-left: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+  
+      .menu {
+        margin-left: auto;
+  
+        .menu__list {
+          display: flex;
+  
+          .menu__item+.menu__item {
+            margin-left: 45px;
+  
+            .menu__link {
+              transition: all .3s;
+            }
+  
+            .menu__link:hover {
+              color: $dark;
+            }
+  
+          }
         }
-
+      }
+  
+      .menu__link-btn {
+        padding: 9px 25px;
+        border-radius: 8px;
+        margin-left: 45px;
+        background-color: $blue;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        color: #FFF;
       }
     }
-  }
 }

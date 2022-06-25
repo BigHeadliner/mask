@@ -5,6 +5,11 @@
 a {
   text-decoration: none;
   color: #575C74;
+  display: block;
+}
+
+img {
+  display: block;
 }
 
 /*-- variables --*/
@@ -33,13 +38,33 @@ body {
 }
 .header .header__top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+}
+.header .header__top .menu {
+  margin-left: auto;
 }
 .header .header__top .menu .menu__list {
   display: flex;
 }
 .header .header__top .menu .menu__list .menu__item + .menu__item {
   margin-left: 45px;
+}
+.header .header__top .menu .menu__list .menu__item + .menu__item .menu__link {
+  transition: all 0.3s;
+}
+.header .header__top .menu .menu__list .menu__item + .menu__item .menu__link:hover {
+  color: #0C122D;
+}
+.header .header__top .menu__link-btn {
+  padding: 9px 25px;
+  border-radius: 8px;
+  margin-left: 45px;
+  background-color: #1B5FC1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
