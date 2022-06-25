@@ -71,6 +71,7 @@ body {
 }
 .header .header__main {
   display: flex;
+  margin-bottom: 72px;
 }
 .header .header__main .header__main-info {
   display: flex;
@@ -123,4 +124,69 @@ body {
 }
 .header .header__main .header__main-img {
   border-radius: 15px 15px 15px 0;
+}
+.header .header__benefits {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-around;
+}
+.header .header__benefits .header__benefits-item {
+  border: 1px solid transparent;
+  padding-left: 60px;
+  max-width: 267px;
+  position: relative;
+}
+.header .header__benefits .header__benefits-item .header__benefits-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0C122D;
+}
+.header .header__benefits .header__benefits-item .header__benefits-title--shipping::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/shipping.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .header__benefits .header__benefits-item .header__benefits-title--inspection::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/inspection.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .header__benefits .header__benefits-item .header__benefits-title--support::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/support.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .header__benefits .header__benefits-item .header__benefits-title--payment::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/payment.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .header__benefits .header__benefits-item .header__benefits-text {
+  font-size: 15px;
+  line-height: 22px;
 }/*# sourceMappingURL=style.css.map */
