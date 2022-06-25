@@ -31,10 +31,11 @@ body {
 
 /*-- header --*/
 .header {
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(../images/header-bg.png);
   background-position: right;
   background-repeat: no-repeat;
   background-color: #E5E5E5;
+  margin-bottom: 133px;
 }
 .header .header__top {
   display: flex;
@@ -180,7 +181,7 @@ body {
   position: absolute;
   top: 3px;
   left: 1px;
-  width: 50px;
+  width: 57px;
   height: 50px;
   background-image: url(../images/payment.png);
   background-size: cover;
@@ -189,4 +190,35 @@ body {
 .header .header__benefits .header__benefits-item .header__benefits-text {
   font-size: 15px;
   line-height: 22px;
+}
+
+/*-- about --*/
+.about {
+  background-image: url(../images/about-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+.about .about__item {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__item .about__content {
+  max-width: 523px;
+}
+.about .about__item .about__content .about__content-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 26px;
+  color: #0C122D;
+}
+.about .about__item .about__content .about__content-text .key-words {
+  font-weight: 700;
+}
+.about .about__item .about__content .about__content-text + .about__content-text {
+  margin-top: 15px;
 }/*# sourceMappingURL=style.css.map */
