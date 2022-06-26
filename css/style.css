@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-a {
+a,
+P {
   text-decoration: none;
   color: #575C74;
   display: block;
@@ -23,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1165px;
   margin: 0 auto;
   padding: 0 10px;
   border: 1px solid green;
@@ -200,9 +201,18 @@ body {
   background-repeat: no-repeat;
   background-color: #FFF;
 }
+.about .about__item + .about__item {
+  margin-top: 75px;
+}
 .about .about__item {
   display: flex;
   justify-content: space-between;
+}
+.about .about__item .about__img {
+  border-radius: 0 0 15px 0;
+}
+.about .about__item .about__img1 {
+  border-radius: 15px 15px 15px 0;
 }
 .about .about__item .about__content {
   max-width: 523px;
@@ -221,4 +231,92 @@ body {
 }
 .about .about__item .about__content .about__content-text + .about__content-text {
   margin-top: 15px;
+}
+.about .about__item-factory {
+  display: flex;
+  margin-top: 80px;
+}
+.about .about__item-factory .left-side {
+  position: relative;
+  padding-top: 24px;
+}
+.about .about__item-factory .left-side .left-side-text {
+  padding: 62px 30px 78px 30px;
+  max-width: 286px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #1B5FC1;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 24px;
+}
+.about .about__item-factory .right-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .about__item-factory .right-side .right-sider-text {
+  padding: 80px 30px 132px;
+  max-width: 286px;
+  max-height: 332px;
+  background: #FFF;
+  font-size: 15px;
+  line-height: 24px;
+}
+.about .about__item-factory .right-side .right-sider-text1 {
+  padding: 80px 30px 132px;
+  border-radius: 0px 20px 0px 0px;
+  max-width: 286px;
+  max-height: 332px;
+  color: #FFF;
+  background-color: #1B5FC1;
+}
+.about .about__item-factory .right-side .footer {
+  height: 284px;
+  border-radius: 0px 0px 20px 0px;
+  padding: 45px 39px 49px;
+  background-color: #FFB800;
+}
+.about .about__item-factory .right-side .footer .footer-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  color: #0C122D;
+  margin-bottom: 5px;
+}
+.about .about__item-factory .right-side .footer .footer-text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #0C122D;
+  margin-bottom: 28px;
+}
+.about .about__item-factory .right-side .footer .contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 427px;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-btn {
+  padding: 8px 24px;
+  border: 1px solid #1B5FC1;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #1B5FC1;
+  background: transparent;
+  transition: all 0.5s;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-btn:hover {
+  color: #FFF;
+  background: #1B5FC1;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-phone {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #0C122D;
 }/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }  
  
-a{ 
+a, 
+P{ 
   text-decoration:none; 
   color:#575C74; 
   display: block;
@@ -31,7 +32,7 @@ body{
 } 
  
 .container{ 
-  max-width: 1150px; 
+  max-width: 1165px; 
   margin:0 auto;  
   padding: 0 10px;  
   border:1px solid green; 
@@ -220,39 +221,160 @@ body{
    } 
   }
 }  
+   
+
+/*-- about --*/   
  
-/*-- about --*/  
- 
-.about{ 
+.about {
   background-image: url(../images/about-bg.png);
   background-size: cover;
   background-position: center;
-  background-repeat:no-repeat; 
-  background-color: #FFF;  
- .about__item{ 
-   display:flex;   
-   justify-content: space-between;
-   .about__content{ 
-    max-width: 523px; 
-    .about__content-title{ 
-      font-family: 'Rubik', sans-serif;  
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 50px; 
-      margin-top: 10px; 
-      margin-bottom: 26px;
-      color: $dark;
-    }  
-     
-    .about__content-text{ 
-      .key-words{  
-        font-weight: 700; 
-       }
+  background-repeat: no-repeat;
+  background-color: #FFF;
+
+  .about__item+.about__item {
+    margin-top: 75px;
+  }
+
+  .about__item {
+    display: flex;
+    justify-content: space-between;
+
+    .about__img {
+      border-radius: 0 0 15px 0;
     }
-    .about__content-text + .about__content-text{  
-      margin-top: 15px;   
+
+    .about__img1 {
+      border-radius: 15px 15px 15px 0
     }
-   }
-  }  
+
+    .about__content {
+      max-width: 523px;
+
+      .about__content-title {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+        color: $dark;
+      }
+
+      .about__content-text {
+        .key-words {
+          font-weight: 700;
+        }
+      }
+
+      .about__content-text+.about__content-text {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .about__item-factory {
+    display: flex;
+    margin-top: 80px;
+
+    .left-side {
+      position: relative;
+      padding-top: 24px;
+
+      .left-side-text {
+        padding: 62px 30px 78px 30px;
+        max-width: 286px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $blue;
+        color: #FFF;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    .right-side {
+      display: flex;
+      flex-wrap: wrap;
+
+      .right-sider-text {
+        padding: 80px 30px 132px;
+        max-width: 286px;
+        max-height: 332px;
+        background: #FFF;
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .right-sider-text1 {
+        padding: 80px 30px 132px;
+        border-radius: 0px 20px 0px 0px;
+        max-width: 286px;
+        max-height: 332px;
+        color: #FFF;
+        background-color: $blue;
+      }
+
+      .footer {
+        // width: 100%; 
+        height: 284px;
+        border-radius: 0px 0px 20px 0px;
+        padding: 45px 39px 49px;
+        background-color: $accent;
+
+        .footer-title {
+          font-family: 'Rubik', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 50px;
+          color: $dark;
+          margin-bottom: 5px;
+        }
+
+        .footer-text {
+          font-size: 15px;
+          line-height: 24px;
+          color: $dark;
+          margin-bottom: 28px;
+        }
+
+        .contact-us {
+          display: flex;  
+          justify-content: space-between;
+          align-items: center; 
+          max-width:427px;
+
+          .contact-us-btn {
+            padding: 8px 24px;
+            border: 1px solid $blue;
+            border-radius: 8px;
+            font-family: "Rubik", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: $blue;
+            background: transparent;
+            transition: all 0.5s;
+          }
+
+          .contact-us-btn:hover {
+            color: #FFF;
+            background: $blue;
+          } 
+           
+          .contact-us-phone{ 
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px; 
+            color:$dark;
+          }
+        }
+      }
+    }
+
+  }
+
 
 }
