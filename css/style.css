@@ -296,7 +296,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 427px;
+  max-width: 450px;
+  position: relative;
 }
 .about .about__item-factory .right-side .footer .contact-us .contact-us-btn {
   padding: 8px 24px;
@@ -310,13 +311,50 @@ body {
   background: transparent;
   transition: all 0.5s;
 }
+.about .about__item-factory .right-side .footer .contact-us .contact-us-btn::after {
+  content: "";
+  height: 46px;
+  width: 1px;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 167px;
+}
 .about .about__item-factory .right-side .footer .contact-us .contact-us-btn:hover {
   color: #FFF;
   background: #1B5FC1;
+  box-shadow: 0px 10px 15px 0px rgba(27, 95, 193, 0.1882352941);
 }
 .about .about__item-factory .right-side .footer .contact-us .contact-us-phone {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
   color: #0C122D;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-phone .fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-right: 14px;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #1B5FC1;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-phone .fa-phone-flip {
+  font-size: 20px;
+}
+.about .about__item-factory .right-side .footer .contact-us .contact-us-phone::after {
+  content: "Contact us";
+  position: absolute;
+  top: -3px;
+  left: 60px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1B5FC1;
 }/*# sourceMappingURL=style.css.map */
