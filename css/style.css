@@ -200,6 +200,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFF;
+  margin-bottom: 80px;
 }
 .about .about__item + .about__item {
   margin-top: 75px;
@@ -357,4 +358,28 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #1B5FC1;
+}
+
+/*-- certification --*/
+.certification .certification__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.certification .certification__inner .certification__title {
+  font-size: 15px;
+  line-height: 24px;
+  margin-right: 249px;
+}
+.certification .certification__inner .certification__title::before {
+  content: "";
+  width: 147px;
+  height: 1px;
+  background-color: #FFB800;
+  position: absolute;
+  top: 40px;
+  left: 157px;
+}
+.certification .certification__inner .certification__item2 {
+  margin: 0 100px;
 }/*# sourceMappingURL=style.css.map */
