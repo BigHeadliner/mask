@@ -502,6 +502,9 @@ body {
 }
 
 /*-- preventdisease --*/
+.preventdisease {
+  margin-bottom: 120px;
+}
 .preventdisease .preventdisease__inner {
   margin: 0 auto;
   display: flex;
@@ -539,4 +542,43 @@ body {
   background-color: #1B5FC1;
   color: #FFF;
   box-shadow: 0px 10px 15px 0px #1B5FC1;
+}
+
+/*-- contact --*/
+.contact {
+  background-color: #FFB800;
+  height: 130px;
+}
+.contact .contact__inner {
+  height: 130px;
+  padding-top: 38px;
+}
+.contact .contact__inner .contact__items {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparet;
+}
+.contact .contact__inner .contact__items .contact__item {
+  position: relative;
+  padding-left: 50px;
+  line-height: 20px;
+  border: 1px solid transparent;
+}
+.contact .contact__inner .contact__items .contact__item .contact__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0C122D;
+}
+.contact .contact__inner .contact__items .contact__item .contact__text {
+  font-size: 15px;
+  color: #0C122D;
+}
+.contact .contact__inner .contact__items .contact__item .fa-solid {
+  font-size: 32px;
+  color: #1B5FC1;
+  position: absolute;
+  top: 5px;
+  left: 12px;
 }/*# sourceMappingURL=style.css.map */
