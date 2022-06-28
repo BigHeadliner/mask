@@ -498,7 +498,7 @@ body {
           height: 163px; 
           border:1px solid transparent;
           padding-left: 71px;    
-          margin: 1px;
+          margin: 3px;
           position:relative;  
 
           .fa-solid{   
@@ -533,4 +533,51 @@ body {
     } 
    }
 
- }
+ } 
+  
+   /*-- reviews --*/ 
+    
+   .reviews{ 
+    background-color: #F7FDFB;  
+    .reviews__items{ 
+      display: flex; 
+      justify-content: space-between; 
+     .reviews__item{  
+       max-width:360px;   
+       border-radius: 15px 15px 15px 0; 
+       padding: 47px 40px;
+       border:1px solid $grey; 
+       background-color: #FFF;
+       .reviews__item-top{  
+        display: flex; 
+        justify-content: space-between;  
+        margin-bottom: 33px;
+         
+         .fa-brands{ 
+          font-size: 32px;
+         }
+       } 
+       .reviews__item-text{ 
+        color:$dark;  
+        line-height: 27px;
+        margin-bottom: 25px;
+       } 
+       .reviews__item-person{ 
+        border: 1px solid transparent;  
+        position:relative;  
+        padding-left: 60px; 
+        line-height: 23px;
+        .reviews__item-img{ 
+          position:absolute; 
+          top:1px; 
+          left:7px;
+        }
+        .reviews__item-name{ 
+          font-weight: 600;
+          font-size: 20px; 
+          color:$dark;
+        }
+       }
+     }
+    }
+   }
