@@ -557,6 +557,7 @@ body {
   display: flex;
   justify-content: space-between;
   border: 1px solid transparet;
+  position: relative;
 }
 .contact .contact__inner .contact__items .contact__item {
   position: relative;
@@ -581,4 +582,23 @@ body {
   position: absolute;
   top: 5px;
   left: 12px;
-}/*# sourceMappingURL=style.css.map */
+}
+.contact .contact__inner .contact__items .contact__item--border::before,
+.contact .contact__inner .contact__items .contact__item--border::after {
+  content: "";
+  height: 51px;
+  width: 1px;
+  background-color: #E0E0E0;
+}
+.contact .contact__inner .contact__items .contact__item--border::before {
+  position: absolute;
+  top: 0;
+  right: 170%;
+}
+.contact .contact__inner .contact__items .contact__item--border::after {
+  position: absolute;
+  top: 0;
+  left: 170%;
+}
+
+/*-- footer --*//*# sourceMappingURL=style.css.map */

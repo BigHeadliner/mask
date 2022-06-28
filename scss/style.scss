@@ -642,14 +642,15 @@ body {
         .contact__items {
           display: flex;
           justify-content: space-between;
-          border: 1px solid transparet;  
-        
+          border: 1px solid transparet; 
+          position:relative;   
+
           .contact__item {
             position: relative;
             padding-left: 50px;
             line-height: 20px;
             border: 1px solid transparent;
-  
+            
             .contact__title {
               font-family: "Rubik", sans-serif;
               font-weight: 500;
@@ -670,7 +671,27 @@ body {
               top: 5px;
               left: 12px;
             }
+          } 
+          .contact__item--border::before, 
+          .contact__item--border::after{ 
+            content: ""; 
+            height: 51px; 
+            width: 1px; 
+            background-color: #E0E0E0;
+          } 
+          .contact__item--border::before{ 
+            position:absolute; 
+            top: 0;
+            right: 170%;
+          } 
+          .contact__item--border::after{ 
+            position:absolute; 
+            top:0; 
+            left: 170%;
           }
         }
       }
-    }
+    } 
+     
+      /*-- footer --*/    
+      
