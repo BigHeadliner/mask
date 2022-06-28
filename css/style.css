@@ -456,6 +456,8 @@ body {
 /*-- reviews --*/
 .reviews {
   background-color: #F7FDFB;
+  background: linear-gradient(to bottom, #F7FDFB 85%, #FFF 15%);
+  padding-top: 80px;
 }
 .reviews .reviews__items {
   display: flex;
@@ -496,4 +498,6 @@ body {
   font-weight: 600;
   font-size: 20px;
   color: #0C122D;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*-- preventdisease --*//*# sourceMappingURL=style.css.map */

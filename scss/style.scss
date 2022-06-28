@@ -466,7 +466,7 @@ body {
    
  .reasons {
    background-color: #F7FDFB;   
-   
+ 
    .reasons__inner {
      display: flex; 
      justify-content: space-between;
@@ -538,7 +538,9 @@ body {
    /*-- reviews --*/ 
     
    .reviews{ 
-    background-color: #F7FDFB;  
+     background-color: #F7FDFB;    
+     background: linear-gradient(to bottom, #F7FDFB 85%, #FFF 15%);
+    padding-top: 80px;
     .reviews__items{ 
       display: flex; 
       justify-content: space-between; 
@@ -580,4 +582,7 @@ body {
        }
      }
     }
-   }
+   } 
+    
+    /*-- preventdisease --*/  
+    
