@@ -56,6 +56,7 @@ body {
   padding: 0;
   background-color: transparent;
   transition: all 0.25s;
+  display: none;
 }
 .header .header__top .menu .menu__btn .row-top,
 .header .header__top .menu .menu__btn .row-middle,
@@ -63,7 +64,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 45px;
   height: 3px;
   background: #1B5FC1;
   transform: rotate(0);
@@ -74,6 +75,15 @@ body {
 }
 .header .header__top .menu .menu__btn .row-bottom {
   transform: translateY(33px);
+}
+.header .header__top .menu .menu__btn--open .row-top {
+  transform: rotate(45deg) translateY(10px) translateX(10px);
+}
+.header .header__top .menu .menu__btn--open .row-middle {
+  display: none;
+}
+.header .header__top .menu .menu__btn--open .row-bottom {
+  transform: rotate(-45deg) translateY(10px) translateX(-10px);
 }
 .header .header__top .menu .menu__list {
   display: flex;
@@ -732,15 +742,19 @@ body {
     margin-left: 0;
     order: 3;
   }
+  .header .header__top .menu .menu__btn {
+    display: block;
+  }
   .header .header__top .menu .menu__list {
-    border: 1px solid fuchsia;
+    border: 1px solid transparent;
     background: #E5E5E5;
     display: block;
     text-align: center;
     position: absolute;
-    top: 83px;
+    top: -375px;
     left: 0;
     right: 0;
+    transition: all 0.5s;
   }
   .header .header__top .menu .menu__list .menu__item + .menu__item {
     margin-left: 0;
@@ -749,5 +763,8 @@ body {
     padding: 20px 0;
     font-size: 19px;
     font-weight: 800;
+  }
+  .header .header__top .menu .menu__list--active {
+    top: 83px;
   }
 }/*# sourceMappingURL=style.css.map */
