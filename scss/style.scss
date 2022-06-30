@@ -979,7 +979,27 @@ body {
          font-size: 40px;
        }
      }
-   }
+   } 
+     /*-- certification  --*/
+   .certification{ 
+    .certification__inner {    
+       justify-content: space-around; 
+       flex-wrap: wrap;
+      .certification__title{ 
+        font-size: 21px; 
+        margin: 18px; 
+        color:$accent;  
+      } 
+      .certification__title::before{  
+        display:none;
+      } 
+      .certification__item1, 
+      .certification__item2, 
+      .certification__item3{  
+        margin: 18px;
+      }
+    }
+   } 
  }
   
   

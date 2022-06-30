@@ -809,6 +809,25 @@ body {
   .about .about__content .about__content-title {
     font-size: 40px;
   }
+
+  /*-- certification  --*/
+  .certification .certification__inner {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .certification .certification__inner .certification__title {
+    font-size: 21px;
+    margin: 18px;
+    color: #FFB800;
+  }
+  .certification .certification__inner .certification__title::before {
+    display: none;
+  }
+  .certification .certification__inner .certification__item1,
+.certification .certification__inner .certification__item2,
+.certification .certification__inner .certification__item3 {
+    margin: 18px;
+  }
 }
 @media (max-width: 830px) {
   /*-- header --*/
