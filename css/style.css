@@ -451,9 +451,12 @@ body {
 }
 .reasons .reasons__inner .reasons__img {
   border-radius: 15px 15px 15px;
+  max-width: 100%;
+  height: auto;
 }
 .reasons .reasons__inner .reasons__content {
   max-width: 650px;
+  padding: 10px 9px;
 }
 .reasons .reasons__inner .reasons__content .reasons__title {
   font-family: "Rubik", sans-serif;
@@ -746,6 +749,15 @@ body {
     background: transparent;
   }
 }
+@media (max-width: 1073px) {
+  /*-- reasons --*/
+  .reasons .reasons__inner .reasons__content {
+    padding: 10px 15px;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item {
+    max-width: 100%;
+  }
+}
 @media (max-width: 1063px) {
   /*-- about --*/
   .about .about__item-factory .right-side {
@@ -828,6 +840,11 @@ body {
 .certification .certification__inner .certification__item3 {
     margin: 18px;
   }
+
+  /*-- reasons  --*/
+  .reasons .reasons__inner .reasons__img {
+    max-width: 33%;
+  }
 }
 @media (max-width: 830px) {
   /*-- header --*/
@@ -840,6 +857,30 @@ body {
   }
   .about .about__item .about__img,
 .about .about__item .about__img1 {
+    display: none;
+  }
+
+  /*-- reasons  --*/
+  .reasons {
+    background-image: url(../images/reasons-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFB800;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__title {
+    color: #FFB800;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__text {
+    color: #FFF;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item .reasons__item-title {
+    color: #FFB800;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item .reasons__item-text {
+    color: #FFF;
+  }
+  .reasons .reasons__inner .reasons__img {
     display: none;
   }
 }
@@ -958,6 +999,11 @@ body {
 .about .about__item-factory .right-side .footer .contact-us .contact-us-phone {
     margin: 10px;
   }
+
+  /*-- reasons --*/
+  .reasons .reasons__inner .reasons__content .reasons__title {
+    font-size: 40px;
+  }
 }
 @media (max-width: 400px) {
   /*-- header --*/
@@ -977,5 +1023,18 @@ body {
     padding: 15px 10px 94px;
     font-size: 15px;
     line-height: 21px;
+  }
+
+  /*-- reasons --*/
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item {
+    padding-left: 63px;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item .reasons__item-title {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .reasons .reasons__inner .reasons__content .reasons__items .reasons__item .reasons__item-text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
