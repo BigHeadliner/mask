@@ -876,6 +876,19 @@ body {
         }
        
       }
+    } 
+     
+     /*-- reviews --*/   
+     .reviews{
+     .reviews__items{   
+      display:flex;
+      flex-wrap:wrap;   
+      justify-content: space-evenly;
+      align-items: center;
+      .reviews__item{  
+        margin:10px;
+      }
+     } 
     }
   }  
    
@@ -1351,7 +1364,20 @@ body {
         }
       }
     }
-  }   
+  }    
+   
+    /*-- reviews --*/   
+    .reviews{
+      .reviews__items{   
+       display:flex;
+       flex-wrap:wrap;   
+       justify-content: space-evenly;
+       align-items: center;
+       .reviews__item{  
+         margin:5px 0;
+       }
+      } 
+     }
 
 } 
  

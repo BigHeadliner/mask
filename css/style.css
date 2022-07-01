@@ -748,6 +748,17 @@ body {
   .about .about__item-factory .right-side .footer .contact-us .contact-us-btn::after {
     background: transparent;
   }
+
+  /*-- reviews --*/
+  .reviews .reviews__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .reviews .reviews__items .reviews__item {
+    margin: 10px;
+  }
 }
 @media (max-width: 1073px) {
   /*-- reasons --*/
@@ -1036,5 +1047,16 @@ body {
   .reasons .reasons__inner .reasons__content .reasons__items .reasons__item .reasons__item-text {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  /*-- reviews --*/
+  .reviews .reviews__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .reviews .reviews__items .reviews__item {
+    margin: 5px 0;
   }
 }/*# sourceMappingURL=style.css.map */
