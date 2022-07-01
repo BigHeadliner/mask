@@ -1130,9 +1130,24 @@ body {
       }
     }
    } 
+    /*-- footer --*/ 
+    .footer{ 
+      .footer__items{ 
+        display:flex;  
+        flex-wrap:wrap;
+        justify-content: space-evenly; 
+        .footer__item-logo,  
+        .footer__item-menu, 
+        .footer__item-contact{ 
+          margin:15px;
+        }
 
+      } 
+    } 
  }
- 
+  
+
+
 @media(max-width:800px) {
 
   /*-- header --*/
@@ -1236,7 +1251,48 @@ body {
  
 
 } 
- 
+
+@media(max-width:630px) {  
+   /*-- footer --*/ 
+
+  .footer { 
+    .footer__items {  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;  
+      align-items:center;
+      margin-bottom: 0;
+      .footer__item-contact{  
+        width: 100%;
+        text-align: center;
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        .footer__item-contact-title{ 
+          margin-bottom: 0px;
+        }
+       .menu__list{  
+        display:flex;
+        justify-content:space-around;
+        padding-left: 0;
+         width: 100%;
+         text-align: center;  
+         .menu__item{  
+        
+          .fa-brands{ 
+            position: relative;
+            font-size: 35px;
+            top: 20%;
+            left: 4%; 
+            margin-bottom: 27px;
+          }
+         }
+       }
+      }
+    }
+  }
+}
 
 @media(max-width:570px) {
 
@@ -1272,7 +1328,7 @@ body {
     .about__item {
       .about__content {
         .about__content-title {
-          line-height: 45px;
+          line-height: 15px;
         }
       }
     } 
@@ -1298,7 +1354,10 @@ body {
         line-height: 28px;
       }
     }
-  }
+  }  
+
+  
+  
 }   
  
 
@@ -1338,10 +1397,26 @@ body {
         }
       }
     } 
+  }  
+  /*-- footer --*/ 
+  .footer{ 
+    .footer__items{ 
+      .footer__item-menu{ 
+        width: 100%; 
+        text-align: center; 
+        .menu__list{ 
+          .menu__item{ 
+            .menu__link{ 
+              font-size: 18px;
+            }
+          }
+        }
+      } 
+    } 
   } 
 }
 
- 
+
 @media(max-width:400px) {
 
   /*-- header --*/
@@ -1426,7 +1501,26 @@ body {
       } 
      
     }
-  }
+  } 
+     
+  /*-- footer --*/
+  .footer { 
+    .footer__items{ 
+      .footer__item-contact{ 
+        .menu__list{  
+          .menu__item{  
+            .fa-brands{ 
+              font-size: 33px;
+            }
+            .menu__link{ 
+              font-size: 7px; 
+              color:transparent;
+            }  
+          } 
+        }
+      } 
+    }
+  } 
 
 } 
  
